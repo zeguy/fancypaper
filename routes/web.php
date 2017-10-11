@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::view('/', 'welcome');
+Route::get('/prints/', 'PrintController@index');
+Route::get('/form/', 'PrintController@addPrint');
