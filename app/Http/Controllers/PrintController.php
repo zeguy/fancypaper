@@ -9,7 +9,7 @@ class PrintController extends Controller
     //
     public function index()
     {
-        return "Show all prints";
+        return view('index');
     }
 
     public function addPrint()
