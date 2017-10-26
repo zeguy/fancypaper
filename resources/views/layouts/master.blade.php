@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
 
-    <title>P2</title>
+    <title>FancyPaper</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/p2.css">
 

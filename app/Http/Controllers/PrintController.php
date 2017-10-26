@@ -7,13 +7,27 @@ use Illuminate\Http\Request;
 class PrintController extends Controller
 {
     //
-    public function index()
+    public function create()
     {
-        return view('index');
+        return view('prints.create')->with([
+            'message' => session('message')
+        ]);
     }
 
-    public function addPrint()
+    public function store(Request $request)
     {
-        return "add a print";
+        
+        $this->validate($request, [
+            'artist' => 'required',
+            'printName' => 'required',
+            'cost' => 'required|min:0|numeric'
+        ]);
+        
+        $artist = $request->input('artist');
+
+        return redirect('/prints/create')->with([
+            'message' => 'Your print '.$artist.' was added.'
+        ]);
     }
+
 }

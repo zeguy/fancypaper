@@ -12,8 +12,8 @@
 */
 
 Route::view('/', 'welcome');
-Route::get('/prints/', 'PrintController@index');
-Route::get('/form/', 'PrintController@addPrint');
+Route::get('/prints/create', 'PrintController@create');
+Route::post('/prints', 'PrintController@store');
 
 Route::get('/env', function () {
     dump(config('app.name'));
