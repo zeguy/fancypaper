@@ -12,12 +12,12 @@
 */
 
 Route::view('/', 'welcome');
-Route::get('/prints/create', 'PrintController@create');
-Route::post('/prints', 'PrintController@store');
+Route::get('/prints/breakeven', 'BreakevenController@display');
+Route::post('/prints', 'BreakevenController@calculate');
 
 Route::get('/env', function () {
-    dump(config('app.name'));
-    dump(config('app.env'));
-    dump(config('app.debug'));
-    dump(config('app.url'));
+	dump(config('app.name'));
+	dump(config('app.env'));
+	dump(config('app.debug'));
+	dump(config('app.url'));
 });
