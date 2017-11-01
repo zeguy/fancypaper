@@ -1,2 +1,2 @@
 # FancyPaper
-<http://p3.zeguy.me>
+<http://p3.zeguy.me/prints/breakeven>
