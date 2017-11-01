@@ -26,7 +26,7 @@
 	</fieldset>
 </form>
 
-<h4>Results:</h4>
+<h6>Results:</h6>
 @if(count($errors) > 0)
 	<ul>
 		@foreach ($errors->all() as $error)
